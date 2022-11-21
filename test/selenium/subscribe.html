@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>subscribe</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">subscribe</td></tr>
+</thead><tbody>
+<tr>
+	<td>storeEval</td>
+	<td>&quot;u&quot;+(new Date().getTime()).toString().substr(6)</td>
+	<td>username</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/typelink/session/signup</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>signupLogin</td>
+	<td>${username}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>email</td>
+	<td>${username}@joshjustice.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>signupPassword</td>
+	<td>password</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>passwordConfirm</td>
+	<td>password</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Create account']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Hi ${username}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//h1</td>
+	<td>Home</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=New</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>title</td>
+	<td>page 1</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>create</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//span/span</td>
+	<td>page 1</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=New</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>title</td>
+	<td>page 2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>create</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>flash-message</td>
+	<td>Thank you for trying TypeLink! To create more pages, please go to Account and upgrade to a Pro account.</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>_action_edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>subscribeBtn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>login_email</td>
+	<td>buyer2_1302970382_per@typelink.net</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>login_password</td>
+	<td>302970362</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>submitLogin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>continue</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='main']/div/div/div[2]/h2</td>
+	<td>Thanks for your order</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//h1</td>
+	<td>Now You're a Pro!</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>_action_edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/span</td>
+	<td>Pro History</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=New</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>title</td>
+	<td>page 2</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>create</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//span/span</td>
+	<td>page 2</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=New</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>title</td>
+	<td>page 3</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>create</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//span/span</td>
+	<td>page 3</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Log out</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

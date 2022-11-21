@@ -1,0 +1,717 @@
+/* Global ----------------------------------------------------------*/
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.body {
+	float: none;
+}
+
+body, input, select, textarea, td, th,
+.menuButton, .buttons input, th a:link, th a:visited {
+	font-size: 16px;
+}
+
+div#logo {
+	background: url(../images/header-logo.png) left top no-repeat;
+	width: 300px;
+	height: 36px;
+	margin: 2px 0 2px 15px;
+	color: black;
+	font-family: Baskerville, Times New Roman, serif;
+}
+
+div#logo a {
+	padding-left: 70px;
+	color: black;
+	font-weight: inherit;
+}
+
+div#logo a:link {
+	color: black;	
+}
+
+div#logo a:hover {
+	text-decoration: none;
+}
+
+div#logo span {
+	color: #00E;
+	font-weight: bold;	
+}
+
+h1 {
+	font: bold 24px Baskerville, Times New Roman, serif;
+	color: #00E;
+}
+
+/*
+.show-page h1 {
+	display: block;
+	float: left;
+	width: 100%;
+}
+*/
+
+h2 {
+	font: bold 18px Baskerville, Times New Roman, serif;
+}
+
+h1.private {
+    color: #090;
+}
+
+h1.shared,
+h1.shared a {
+    /*color: #432c83;*/
+    color: #551a8b;
+}
+
+h1.public,
+h1.public a {
+    /*color: #0f59b7;*/
+    color: #00E;
+}
+
+#logo {
+	float: left;
+	font-size: 32px;
+    color: #090;
+    margin: 0 15px;
+}
+
+#login-state {
+	float: right;
+	margin: 0 15px;
+}
+
+#site-nav {
+	clear: right;
+	float: right;
+	margin: 0 15px;
+}
+
+#site-nav form {
+	display: inline;
+}
+
+#site-nav input {
+	display: inline;
+	border: none;
+	background: none;
+	color: #00E;
+	font-weight: bold;
+	line-height: 12px;
+	cursor: pointer;
+	margin: 0;
+	padding: 0;
+	width: 80px;
+	height: 20px;
+}
+
+#site-nav input:hover {
+	text-decoration: underline;
+}
+
+.nav {
+	clear: both;
+}
+
+.nav,
+.buttons,
+th,
+.paginateButtons
+{
+	background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, from(rgb(232, 232, 232)), to(rgb(255, 255, 255)));
+}
+
+.nav .right {
+	display: block;
+	float: right;
+}
+
+span.menuButton form {
+	display: inline;
+}
+
+span.menuButton input {
+	border: none;
+	background: none;
+	color: #333;
+	font-weight: bold;
+	cursor: pointer;
+	margin: 0;
+	padding: 0;
+}
+
+span.menuButton input:hover {
+	text-decoration: underline;
+}
+
+a:link, a:visited, a:hover {
+    color: #00E;
+}
+
+a.private:link, a.private:visited, a.private:hover {
+    /*color: #48802c;*/
+    color: #090;
+    /*padding-left: 20px;*/
+}
+
+a.shared:link, a.shared:visited, a.shared:hover {
+    /*color: #432c83;*/
+    color: #551a8b;
+    /*padding-left: 20px;
+    background: url(../images/shared.png) top left no-repeat;*/
+}
+
+a.public:link, a.public:visited, a.public:hover,
+a.external:link, a.external:visited, a.external:hover {
+    /*color: #0f59b7;*/
+    color: #00E;
+}
+
+a.public:link, a.public:visited, a.public:hover,
+a.external:link, a.external:visited, a.external:hover {
+    /*padding-left: 20px;
+    background: url(../images/public.png) top left no-repeat;*/
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+label {
+	display: block;
+}
+
+.left-fields label.field {
+	float: left;
+	width: 160px;
+	margin-top: 5px;
+}
+
+.left-fields span.value {
+	float: left;
+	margin-top: 5px;
+}
+
+label.checkbox,
+label.file,
+label.select {
+	float: left;
+}
+
+label.checkbox,
+label.file {
+	margin: 8px 8px 8px 0;
+}
+
+label.select {
+	margin: 4px 0;
+}
+
+.buttons {
+	margin-top: 20px;
+}
+
+ul {
+	padding-left: 30px;
+}
+
+.alert {
+	display: none; /* unless js shows it */
+	background: #ffffcc;
+	border: solid 1px #ffff00;
+	padding: 5px;
+	margin: 5px 0 0 0;
+}
+
+.alert a {
+	float: right;
+	color: #999900;
+	font-weight: normal;
+	font-size: 12px;
+	margin-top: 4px;
+}
+
+.copyright {
+	clear: both;
+	font-size: 11px;
+	color: gray;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.copyright a:link,
+.copyright a:active,
+.copyright a:visited {
+	color: gray;
+}
+
+.buttons a,
+.buttons a:link {
+    color: #333;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 3px;
+    overflow: visible;
+    padding: 2px 6px;
+}
+
+.buttons a:hover {
+	text-decoration: none;
+}
+
+/* Login -------------------------------------------------------------*/
+
+div.splash {
+	margin-top: 15px;
+}
+
+div.splash div.main-column {
+	float: left;
+	width: 67%;
+}
+
+div.splash div.right-column {
+	float: right;
+	width: 30%;
+	border: solid 1px gray;
+	padding: 10px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e8e8e8');
+	background: -webkit-gradient(linear, 0% 100%, 0% 0%, from(rgb(232, 232, 232)), to(rgb(255, 255, 255)));
+	background: -moz-linear-gradient(top, #ffffff, #e8e8e8);
+}
+
+div.splash div.main-column h1 {
+	margin: 0;
+}
+
+div.splash div.main-column h2 {
+	margin-bottom: 10px;
+}
+
+div.splash div.main-column div.img {
+	float: left;
+	width: 50%;
+	height: 207px;
+	overflow: hidden;
+	background: url(../images/splash-image.png) center center no-repeat;
+}
+
+div.splash div.main-column div.splash-nav {
+	width: 50%;
+	float: right;
+}
+
+div.splash div.main-column div.splash-nav ul {
+	list-style-type: none;
+	margin: 0 0 20px 0;
+	padding: 0;
+	font-size: 20px;
+}
+
+div.splash div.main-column div.splash-nav input {
+	width: 160px;
+	padding: 10px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e8e8e8');
+	background: -webkit-gradient(linear, 0% 100%, 0% 0%, from(rgb(232, 232, 232)), to(rgb(255, 255, 255)));
+	background: -moz-linear-gradient(top, #ffffff, #e8e8e8);
+	
+	font-size: 20px;
+	cursor: pointer;
+	margin-bottom: 13px;
+}
+
+div.splash div.main-column div.splash-nav input#appStoreButton {
+	text-indent: -1000px;
+	width: 160px;
+	height: 54px;
+	border: none;
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	background: transparent url(../images/app_store_badge.png) top left no-repeat;
+	filter: none; /* to remove gradient in IE */
+	margin-top: 13px;
+}
+
+div.splash div.right-column h1 {
+	margin: 0;
+}
+
+div.splash div.right-column input.text {
+	width: 100%;
+	
+	/* fix for 100% too wide */
+	/* http://css-tricks.com/box-sizing/ */
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.main-column iframe {
+	float: left;
+	margin: 0 10px 5px 0;
+}
+
+/* List Pages --------------------------------------------------------*/
+
+.sub-menu {
+	margin-bottom: 5px;
+}
+
+span.perm-icon {
+	padding-left: 20px;
+}
+h1 span.perm-icon {
+	padding-left: 0;
+}
+
+span.public {
+    background: url(../images/public.png) left center no-repeat;
+}
+
+span.shared {
+    background: url(../images/shared.png) left center no-repeat;
+}
+h1 span.public, h1 span.shared {
+	padding-left: 20px;
+}
+
+.list .content {
+	line-height: 18px;
+}
+
+div.list a.private, div.list a.private:visited, div.list a.private:hover {
+    /*padding-left: 20px;*/
+}
+
+/* View Page ---------------------------------------------------------*/
+
+span.sp { visibility: hidden; }
+
+#sidebar,
+#sidebar-button {
+	display: block;
+	float: right;
+	border: solid 1px #ccc;
+	/*margin-top: 22px;*/
+}
+
+#sidebar-button {
+	width: 20px;
+	text-align: center;
+}
+
+#sidebar {
+	display: none;
+	width: 200px;
+	padding: 5px;
+}
+
+#sidebar a:link,
+#sidebar-button a:link {
+	color: #333;
+}
+
+#sidebar a:hover,
+#sidebar-button a:hover {
+	text-decoration: none;
+}
+
+#sidebar input.text {
+	width: 190px;
+}
+
+#page-content {
+	clear: left;
+	min-height: 190px;
+	word-wrap: break-word;
+	white-space: pre-wrap;
+}
+
+.stButton {
+	margin-left: 0 !important;
+	margin-right: -8px !important;
+}
+
+.st_sharethis {
+	margin-right: 10px;
+}
+
+/* Edit Page ---------------------------------------------------------*/
+
+p.tip {
+	margin-bottom: 10px;
+}
+
+div.iPhoneCheckContainer {
+	margin-left: 10px;
+}
+
+
+#savedIndicator {
+	float: right;
+	width: 85px;
+	margin: 0;
+	white-space: nowrap;
+}
+
+#savedIndicator.errors {
+	background: #fff3f3 url(../images/skin/exclamation.png) 8px 50% no-repeat;
+    padding: 5px 5px 5px 30px;
+}
+
+label.public {
+    /*color: #0f59b7;*/
+    color: #00E;
+    padding-left: 20px;
+    background: url(../images/public.png) left center no-repeat;
+}
+
+span.public-checkbox-value {
+	float: left;
+	padding: 8px 0 8px 8px;
+}
+
+label.sharedTo {
+    /*color: #432c83;*/
+    color: #551a8b;
+    padding-left: 20px;
+    background: url(../images/shared.png) left center no-repeat;
+    display: inline;
+}
+
+label.aliases {
+	display: inline;
+}
+
+a.shared {
+    /*color: #432c83;*/
+    color: #551a8b;
+}
+
+input#title {
+	width: 100%;
+	font: bold 24px Baskerville, Times New Roman, serif;
+	margin-top: 0.8em;
+	
+   /* fix for 100% too wide */
+   /* http://css-tricks.com/box-sizing/ */
+   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+   box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+input#title.create {
+	margin-top: 0;	
+}
+
+textarea#content {
+	height: 200px;
+	margin-top: 10px;
+	
+	/* ie8 width hack */
+   width: 700px; /* only applied to ie */
+   min-width:100%; /* applied to other browsers */
+   max-width:100%;
+   
+   /* fix for 100% too wide */
+   /* http://css-tricks.com/box-sizing/ */
+   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+   box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+/* end ie8 width hack*/
+
+.iphoneCheckContainer {
+	float: left;
+	margin: 5px;
+}
+
+input.checkbox {
+	margin: 10px 0;
+	border: none; 
+}
+
+input#publiclyVisible {
+	margin: 10px;
+}
+
+select.fontId {
+	margin-left: 10px;	
+}
+
+#flash-message-container {
+	position: absolute;
+	top: 110px;
+	width: 300px;
+	z-index: 1; /* to go in front of iphone slider control */
+	
+	/* centered */
+	left: 50%;
+	margin-left: -150px; /* half of width */
+	/* end centered */
+}
+
+.buttons .cancel {
+	background: none;
+}
+
+/* Import ------------------------------------------------------------*/
+
+.results .success {
+	color: green;
+}
+
+.results .error {
+	color: red;
+}
+
+input.file {
+	border: none;
+	margin-left: 10px;
+}
+
+.file-input-not-supported {
+	display: none;
+}
+
+/* Subscribe ---------------------------------------------------------*/
+
+div.account input#subscribeBtn {
+	display: inline;
+	cursor: pointer;
+}
+
+div.account div.value {
+	margin-bottom: 5px;
+}
+
+div.account label.field {
+	font-weight: bold;
+	width: 170px;
+}
+
+a.history {
+	display: block;
+	font-size: 12px;
+}
+
+table.subscription {
+	margin-top: 10px;
+}
+
+div.subscriptionPaginateButtons {
+	margin-bottom: 10px;
+}
+
+table.subscription label {
+	display: none;
+}
+
+table.comparison th {
+	white-space: nowrap;
+}
+
+table.comparison td {
+	line-height: 20px;
+}
+
+table.subscription td.empty {
+	text-align: center;
+}
+
+table.comparison li {
+	margin-bottom: 10px;
+}
+
+table.comparison colgroup.label {
+	width: 20%;
+}
+
+table.comparison colgroup.value {
+	width: 40%;
+}
+
+table.comparison colgroup.value {
+	width: 40%;
+}
+
+div.comparison {
+	border: solid 1px gray;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+div.comparison div.account-type {
+	display: block;
+	width: 49%;
+	float: left;
+}
+
+div.comparison div.account-type-inner {
+	padding: 10px;
+}
+
+div.comparison div.account-type-last {
+	border-left: solid 1px gray;
+}
+
+div.comparison div.cost {
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+div.comparison div.payment-box {
+	margin-top: 10px;
+}
+
+div.comparison form {
+	display: block;
+	float: left;
+}
+
+div.comparison div.paypal-logo {
+	display: block;
+	float: left;
+}
+
+div.comparison div.payment-box p {
+	clear: left;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+dl.faq dt {
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+div.content p {
+	margin-bottom: 10px;
+}
+
+div.content div.dialog {
+	border: solid 1px gray;
+	padding: 10px;
+}
+
+div.content label {
+	font-weight: bold;
+}

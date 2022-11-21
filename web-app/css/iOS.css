@@ -1,0 +1,51 @@
+/* Global ----------------------------------------------------------*/
+
+.buttons {
+	background: none;
+	border: none;
+	border-top: solid 1px gray;
+}
+
+.buttons input.edit,
+.buttons input.save,
+.buttons input.delete,
+.buttons input.cancel {
+	border: solid 1px #ccc;
+	background: #ccc;
+	margin: 5px 0 0 0;
+    padding: 2px 6px;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+.buttons input.delete {
+	background: red;
+	border-color: #f66;
+}
+
+#login-state {
+	font-size: 15px;
+}
+
+/* Edit Page ---------------------------------------------------------*/
+
+/* hide checkbox until converted to slider */
+/*
+input#publiclyVisible {
+	display: none; 
+}
+*/
+
+.panel-buttons button {
+	font-size: 20px;
+}
+
+/* Import ------------------------------------------------------------*/
+
+.file-input-control {
+	display: none;
+}
+
+.file-input-not-supported {
+	display: block;
+}

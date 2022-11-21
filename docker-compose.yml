@@ -1,0 +1,20 @@
+version: "3"
+services:
+  db:
+    image: mysql:5.5.58
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: typelink
+      MYSQL_USER: typelink
+      MYSQL_PASSWORD: s3ph1r0th
+    #volumes:
+      #- ./postgres-data:/var/lib/postgresql/data
+  web:
+    build: .
+    command: catalina.sh run
+    ports:
+      - "8080:8080"
+    links:
+      - db
+    depends_on:
+      - db

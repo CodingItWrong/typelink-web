@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>edit-page</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">edit-page</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/typelink/session/login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>login</td>
+	<td>jjustice</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>password</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Log in']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getEval</td>
+	<td>function selectElementContents(el,start,end) { var sel = window.getSelection(); var range = window.document.createRange(); range.setStart(el,start); range.setEnd(el,end); sel.removeAllRanges(); sel.addRange(range); } selectElementContents(window.document.getElementById(&quot;page-content&quot;),1,10)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=New</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>create</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>title cannot be blank</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>title</td>
+	<td>Josh Public</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>create</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>You already have a page titled Josh Public</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>title</td>
+	<td>New Private Page</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>create</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Log out</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/typelink/jjustice/New+Private+Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//div[3]/div/h1</td>
+	<td>Log in</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>login</td>
+	<td>jjustice</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>password</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Log in']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Home</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getEval</td>
+	<td>function selectElementContents(el,start,end) { var sel = window.getSelection(); var range = window.document.createRange(); range.setStart(el,start); range.setEnd(el,end); sel.removeAllRanges(); sel.addRange(range); } selectElementContents(window.document.getElementById(&quot;page-content&quot;),1,10)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=New</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>title</td>
+	<td>New Public Page</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>publiclyVisible</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>create</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Log out</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/typelink/jjustice/New+Public+Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//span/span</td>
+	<td>jjustice / New Public Page</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>page-content</td>
+	<td>Edit this page to describe New Public Page here.</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Log in</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>login</td>
+	<td>jjustice</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>password</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Log in']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=List</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=New Public Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@name='_action_editSettings' and @value='Settings']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>title</td>
+	<td>New Public Page 2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajax-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>savedIndicator</td>
+	<td>Saved</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>ajax-close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//span/span</td>
+	<td>New Public Page 2</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@name='_action_editSettings' and @value='Settings']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>title</td>
+	<td>Josh Public</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajax-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Could not save: A page with that title already exists</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>title</td>
+	<td>Changed to Private</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>publiclyVisible</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajax-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>savedIndicator</td>
+	<td>Saved</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=List</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=New Private Page</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@name='_action_editSettings' and @value='Settings']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>title</td>
+	<td>Changed to Public</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>publiclyVisible</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ajax-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>savedIndicator</td>
+	<td>Saved</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Log out</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/typelink/jjustice</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Changed to Public</td>
+	<td>Changed to Public</td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>link=Changed to Private</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Log in</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>login</td>
+	<td>jjustice</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>password</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Log in']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=List</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Changed to Public</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>_action_delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>chooseOkOnNextConfirmationAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Page Changed to Public deleted</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Changed to Private</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>_action_delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>chooseOkOnNextConfirmationAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Page Changed to Private deleted</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Log out</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

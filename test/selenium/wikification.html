@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>wikification</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">wikification</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/typelink/jjustice/Home</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Josh Public</td>
+	<td>Josh Public</td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>link=Josh Shared to Bono</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>link=Josh Private</td>
+	<td>Josh Private</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=exact:http://grails.org/doc/latest/guide/5.%20Object%20Relational%20Mapping%20(GORM).html</td>
+	<td>exact:http://grails.org/doc/latest/guide/5.%20Object%20Relational%20Mapping%20(GORM).html</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=josh@joshjustice.com</td>
+	<td>josh@joshjustice.com</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=@jjustice</td>
+	<td>@jjustice</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=exact:http://i52.tinypic.com/b4zqls.jpg</td>
+	<td>exact:http://i52.tinypic.com/b4zqls.jpg</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=exact:http://www.youtube.com/watch?v=Ji3BYXAQSrk</td>
+	<td>exact:http://www.youtube.com/watch?v=Ji3BYXAQSrk</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Josh Public</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//span/span</td>
+	<td>jjustice / Josh Public</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Log in</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>loginLogin</td>
+	<td>bono</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>password</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Log in']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/typelink/jjustice/Home</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Josh Public</td>
+	<td>Josh Public</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Josh Shared to Bono</td>
+	<td>Josh Shared to Bono</td>
+</tr>
+<tr>
+	<td>assertElementNotPresent</td>
+	<td>link=Josh Private</td>
+	<td>Josh Private</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Josh Public</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//span/span</td>
+	<td>jjustice / Josh Public</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/typelink/jjustice/Home</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Josh Shared to Bono</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//h1</td>
+	<td>jjustice / Josh Shared to Bono</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Log out</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>login</td>
+	<td>jjustice</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>password</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Log in']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Josh Public</td>
+	<td>Josh Public</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Josh Shared to Bono</td>
+	<td>Josh Shared to Bono</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Josh Private</td>
+	<td>Josh Private</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Josh Public</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//span/span</td>
+	<td>Josh Public</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Home</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Josh Shared to Bono</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//span/span</td>
+	<td>Josh Shared to Bono</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Home</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Josh Private</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//span/span</td>
+	<td>Josh Private</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Log out</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

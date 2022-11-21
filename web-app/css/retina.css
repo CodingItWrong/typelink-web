@@ -1,0 +1,24 @@
+div#logo {
+	background-image: url(../images/header-logo-small@2x.png);
+	background-size: 16px 16px;
+}
+
+span.public {
+    background: url(../images/public@2x.png) left center no-repeat;
+	background-size: 16px 16px;
+}
+
+span.shared {
+    background: url(../images/shared@2x.png) left center no-repeat;
+	background-size: 13px 16px;
+}
+
+div.splash div.main-column div.img {
+	background: url(../images/splash-image@2x.png) center center no-repeat;
+	background-size: 280px 207px;
+}
+
+div.splash div.main-column div.splash-nav input#appStoreButton {
+	background: url(../images/app_store_badge@2x.png) top left no-repeat;
+	background-size: 160px 54px;
+}

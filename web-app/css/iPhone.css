@@ -1,0 +1,211 @@
+/* Global ----------------------------------------------------------*/
+
+html {
+	-webkit-text-size-adjust: none;
+}
+
+div#logo {
+	background: url(../images/header-logo-small.png) left 2px no-repeat;
+	width: 130px;
+	height: 20px;
+	font-size: 16px;
+}
+
+div#logo a {
+	padding-left: 30px;
+}
+
+#site-nav input {
+	width: auto;
+}
+
+.menubutton a.home,
+.menubutton a.list,
+.menubutton a.create {
+	display: block;
+	float: left;
+	width: 0;
+	padding: 0 0 0 25px;
+	margin: 0 15px;
+	overflow: hidden;
+}
+
+.buttons {
+	background: none;
+	border: none;	
+}
+
+.left-fields label {
+	float: none;
+	width: auto;
+	margin-top: 0;
+}
+
+input {
+	width: 100%;	
+}
+
+.copyright {
+	margin-top: none;
+}
+
+#flash-message-container {
+	top: 50px !important;
+	width: 150px;
+	margin-left: -75px;
+}
+
+/* View Page ---------------------------------------------------------*/
+
+#page-content img,
+#page-content object {
+	width: 100%;
+	height: auto;
+}
+
+#sidebar {
+	float: none;
+	clear: both;
+	width: auto;
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+#sidebar input.text {
+	width: 268px;
+}
+
+/* don't work on iphone */
+
+.st_sharethis,
+.st_email {
+	display: none;	
+}
+
+/* Login -------------------------------------------------------------*/
+
+div.splash div.main-column,
+div.splash div.right-column,
+div.splash div.main-column div.img,
+div.splash div.main-column div.splash-nav {
+	float: none;
+	width: auto;
+	clear: both;
+}
+
+div.splash div.right-column input {
+	width: 100%;
+}
+
+div.splash div.splash-nav {
+	text-align: center;
+}
+
+/* List Pages --------------------------------------------------------*/
+
+.list .content {
+	display: none;
+}
+
+/* Edit Page ---------------------------------------------------------*/
+
+h1 {
+	margin: 0;
+}
+
+#savedIndicator {
+	float: none;
+	width: auto;
+}
+
+input#publiclyVisible {
+	width: auto;
+}
+
+.iphoneCheckContainer {
+	float: right;
+	margin: 5px 0;
+}
+
+.buttons {
+	margin-top: 0;
+	border-top: none;
+}
+
+#flash-message-container {
+	top: 200px;
+}
+
+.panel-buttons button {
+	display: block;
+	width: 100%;
+}
+
+/* Subscribe ---------------------------------------------------------*/
+
+div.account input#subscribeBtn {
+	width: 180px;
+	font-size: 12px;
+}
+
+table.subscription {
+	margin-bottom: 10px;
+}
+
+table.subscription thead,
+div.subscriptionPaginateButtons {
+	display: none;
+}
+
+table.subscription td {
+	display: block;
+	clear: both;
+	width: auto;
+	overflow: hidden;
+	background: white;
+	border: none;
+}
+
+table.subscription td.transactionId {
+	background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, from(rgb(232, 232, 232)), to(rgb(255, 255, 255)));
+	border-top: solid 1px #CCC;
+	border-bottom: solid 1px #CCC;
+}
+
+table.subscription tr.first td.transactionId {
+	border-top: none;
+}
+
+table.subscription label {
+	display: block;
+	float: left;
+	width: 140px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+div.comparison div.account-type {
+	width: auto;
+	float: none;
+}
+
+div.comparison div.account-type-last {
+	border-left: none;
+	border-top: solid 1px gray;
+}
+
+div.comparison form {
+	float: none;
+	width: 157px;
+	margin: 0 auto;
+}
+
+div.comparison input {
+	width: auto;
+}
+
+div.comparison div.paypal-logo {
+	float: none;
+	width: 150px;
+	margin: 5px auto 0;
+}
