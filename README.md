@@ -1,6 +1,6 @@
 # typelink-web
 
-TypeLink personal wiki webapp and API for iOS app.
+TypeLink personal wiki webapp and API for [iOS app](https://github.com/codingitwrong/typelink-ios).
 
 **WARNING:** this app has been discontinued and will not be maintained. The author is not available for support. But feel free to fork it to use for your own purposes.
 
